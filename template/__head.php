@@ -21,7 +21,7 @@ if (!isset($_SESSION['login'])) {
 
 <body>
     <nav class="navbar">
-        <h1><a href="http://localhost/paw/uts">Kasir Que</a></h1>
+        <h1><a href="<?= $base_url; ?>">Kasir Que</a></h1>
         <div class="menu-nav">
             <?php if (isset($_SESSION['is_admin'])) : ?>
                 <?php if ($_SESSION['is_admin']) : ?>
