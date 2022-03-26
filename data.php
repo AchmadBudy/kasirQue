@@ -61,7 +61,7 @@ $barangs = [
 $ppn = 0.11;
 $diskon = 0.2;
 
-$base_url = 'http://localhost/paw/uts/';
+$base_url = 'https://tugasutspaw1914311005.herokuapp.com/';
 
 $user = [
     [
