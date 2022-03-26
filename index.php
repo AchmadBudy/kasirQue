@@ -12,7 +12,7 @@ require_once 'tambah_barang.php';
         <h1>
             Kasir Que
         </h1>
-        <a class="button" href="http://localhost/paw/uts/keranjang.php">
+        <a class="button" href="<?= $base_url; ?>keranjang.php">
             Keranjang
             <?php if (!isset($_SESSION['barang'])) : ?>
                 <sup>0</sup>
