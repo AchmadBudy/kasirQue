@@ -30,7 +30,7 @@ require_once 'tambah_barang.php';
                 </div>
                 <form action="" method="POST">
                     <div class="card-body">
-                        <h2 class="title-barang">Pensil</h2>
+                        <h2 class="title-barang"><?= $barang['nama']; ?></h2>
                         <p>Rp.<?= number_format($barang['harga'], 0, ",", "."); ?></p>
                         <p>Stock <?= $barang['stock']; ?></p>
                     </div>
