@@ -1,0 +1,216 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+nav {
+  height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15%;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-nav {
+  display: flex;
+  gap: 20px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 15px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.logout {
+  padding: 12px 26px;
+}
+
+.content {
+  padding: 0 10%;
+}
+
+.barang {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.card {
+  border-style: double;
+  border-radius: 10px;
+  border-color: black;
+}
+.card-image > img {
+  object-fit: cover;
+  height: 150px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.card-body{
+  padding: 0 10%;
+}
+.card-body > p {
+  margin: 0 10%;
+}
+
+.card-body > h2 {
+  margin: 0 10%;
+}
+.card-footer {
+  padding: 0 10%;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.card-footer > button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button {
+  background-color: #325fa8; /* Green */
+  border: none;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.hapus {
+  background-color: #ce1010; /* Green */
+  border: none;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.judul {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.qty {
+  text-align: center;
+}
+
+.login {
+  margin: 200px auto;
+  padding: 0 35%;
+}
+
+#nota {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin: 40px auto;
+}
+
+#nota td,
+#nota th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#nota tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#nota th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+
+#nota tr:nth-child(1) th:nth-child(1) {
+  width: 10%;
+}
+
+#nota tr:nth-child(1) th:nth-child(2) {
+  width: 46%;
+}
+
+#nota tr:nth-child(1) th:nth-child(3) {
+  width: 10%;
+}
+
+h1,
+.text-center {
+  text-align: center;
+}
+
+.notif-failed{
+  background-color: #ce1010;
+  padding: 5px 2rem;
+  border-radius: 50px;
+  color: #ccc;
+}
+.notif-success{
+  background-color: #1aca69;
+  padding: 5px 2rem;
+  border-radius: 50px;
+  color: rgb(255, 255, 255);
+}
+
+
+/* tablet */
+@media only screen and (max-width: 625px) {
+  .barang {
+    grid-template-columns: 1fr;
+  }
+  .judul {
+    flex-wrap: wrap;
+    margin: 10px 0;
+  }
+
+  .login {
+    margin: 40px auto;
+    padding: 0 5%;
+  }
+}
